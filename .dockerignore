@@ -9,3 +9,5 @@
 **/__pycache__
 staticfiles
 .artifacts
+# The new service builds its own independent context.
+new_story

@@ -5,17 +5,42 @@ services:
       target: development
     env_file: .env
     ports:
-      - "127.0.0.1:8000:8000"
+      - "1403:1403"
     volumes:
       - .:/app
-      - letter_data:/data
+      - old_letter_data:/data
     environment:
       DATABASE_PATH: /data/db.sqlite3
-    command: sh -c "python manage.py migrate --noinput && python manage.py runserver 0.0.0.0:8000"
+      DJANGO_ALLOWED_HOSTS: "${DJANGO_ALLOWED_HOSTS:-localhost,127.0.0.1},${SERVER_HOST:-localhost}"
+    command: sh -c "python manage.py migrate --noinput && python manage.py runserver 0.0.0.0:1403"
     healthcheck:
-      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health/')"]
-      interval: 30s
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:1403/health/')"]
+      interval: 10s
       timeout: 5s
-      retries: 3
+      retries: 6
+      start_period: 10s
+
+  web-new:
+    build:
+      context: ./new_story
+      target: development
+    env_file: .env
+    ports:
+      - "4051:4051"
+    volumes:
+      - ./new_story:/app
+      - new_letter_data:/data
+    environment:
+      DATABASE_PATH: /data/db.sqlite3
+      DJANGO_ALLOWED_HOSTS: "${DJANGO_ALLOWED_HOSTS:-localhost,127.0.0.1},${SERVER_HOST:-localhost}"
+    command: sh -c "python manage.py migrate --noinput && python manage.py runserver 0.0.0.0:4051"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://127.0.0.1:4051/health/')"]
+      interval: 10s
+      timeout: 5s
+      retries: 6
+      start_period: 10s
+
 volumes:
-  letter_data:
+  old_letter_data:
+  new_letter_data:

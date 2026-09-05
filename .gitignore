@@ -8,3 +8,5 @@ __pycache__/
 staticfiles/
 .artifacts/
 .DS_Store
+# Independent Git worktree; never stage it as an embedded repository.
+/new_story/
