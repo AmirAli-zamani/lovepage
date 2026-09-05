@@ -1,0 +1,13 @@
+{% extends 'base.html' %}{% block content %}
+<div class="reading-progress" aria-hidden="true"></div>
+<header class="site-header"><a class="wordmark" href="#home">{{ letter.brand }}<span class="brand-star" aria-hidden="true">✧</span></a><nav aria-label="Our story"><a class="header-link" href="#beginning">Our story</a><span class="header-divider" aria-hidden="true"></span><span class="anniversary">TWO YEARS & COUNTING</span><button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause atmospheric motion" hidden><span aria-hidden="true">Ⅱ</span></button></nav></header>
+<main>
+<section class="hero" id="home" aria-labelledby="hero-title">
+<div class="hero-grain" aria-hidden="true"></div>
+<div class="hero-copy"><p class="eyebrow"><span></span>{{ letter.eyebrow }}</p><h1 id="hero-title">{{ letter.title }}<br><em>{{ letter.title_emphasis }}</em></h1><p class="intro">{{ letter.intro|linebreaksbr }}</p><a class="begin-button" href="#beginning">{{ letter.begin }}<span aria-hidden="true">↗</span></a><p class="invitation">{{ letter.invitation }}</p></div>
+<div class="universe" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="planet"><span class="planet-light"></span><span class="planet-ring"></span></div><span class="star star-one">✦</span><span class="star star-two">✧</span><span class="star star-three">✦</span><span class="star star-four">✧</span><span class="star star-five">·</span><span class="moon"></span><span class="orbit-dot"></span><span class="tiny-heart">♡</span><div class="universe-caption">you & me<span>and a universe of possibilities</span></div></div>
+<div class="hero-bottom"><span class="dedication">{{ letter.dedication }}</span><a href="#beginning" class="scroll-cue">SCROLL TO FEEL IT <span aria-hidden="true">↓</span></a><span class="edition">A LOVE LETTER IN FIVE CHAPTERS</span></div>
+</section>
+<div class="story" id="story"><aside class="chapter-rail" aria-label="Chapters"><nav>{% for chapter in letter.chapters %}<a href="#{{ chapter.id }}" aria-label="Chapter {{ forloop.counter }}: {{ chapter.label }}"><span class="rail-number">0{{ forloop.counter }}</span><span class="rail-label">{{ chapter.label }}</span></a>{% endfor %}</nav></aside>{% for chapter in letter.chapters %}{% include 'letters/chapter.html' %}{% endfor %}</div>
+<footer><a class="wordmark" href="#home">{{ letter.brand }}</a><p>{{ letter.dedication }}</p><a href="#home">Back to our beginning <span aria-hidden="true">↑</span></a></footer>
+</main>{% endblock %}

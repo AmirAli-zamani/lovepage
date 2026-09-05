@@ -1,0 +1,84 @@
+{
+  "brand": "Always, you.",
+  "eyebrow": "A LITTLE UNIVERSE, JUST FOR US",
+  "title": "In every lifetime,",
+  "title_emphasis": "I’d find you.",
+  "intro": "Two years. A thousand little moments.\nAnd one person I’d choose all over again.",
+  "invitation": "This is our story. Take your time.",
+  "begin": "Step into our story",
+  "dedication": "For you. For us. For everything still to come.",
+  "signature": "All my love, always.",
+  "closing": "Not the end. Just another beautiful page.",
+  "chapters": [
+    {
+      "id": "beginning",
+      "label": "The beginning",
+      "title": "It started with a little hello.",
+      "kicker": "01 / WHEN OUR WORLDS MET",
+      "atmosphere": "dawn",
+      "whisper": "Funny how a screen could feel so much like home.",
+      "paragraphs": [
+        "Before you were part of my everyday, you were a name lighting up my screen. A message I hoped would come. A conversation I didn’t want to end.",
+        "Then came the late-night calls. The tiny pauses while a video caught up. The “are you still there?” when neither of us really wanted to say goodnight.",
+        "Somewhere between one more message and five more minutes, a stranger became my favourite part of the day."
+      ],
+      "note": "One hello. A whole new world."
+    },
+    {
+      "id": "knowing-you",
+      "label": "Knowing you",
+      "title": "And then, all the little things.",
+      "kicker": "02 / THE BEAUTY OF BEING YOU",
+      "atmosphere": "rose",
+      "whisper": "I fell for the things you weren’t trying to show me.",
+      "paragraphs": [
+        "The way your expression changes before you say what you’re thinking. Your very particular kind of funny. How an ordinary story becomes better when you’re the one telling it.",
+        "I began to know the small things: when to laugh with you, when to listen, when a little quiet was all you needed. And I’m still learning.",
+        "Two years later, there are still moments when you do something so completely you, and I catch myself smiling."
+      ],
+      "note": "My favourite details are yours."
+    },
+    {
+      "id": "life-happened",
+      "label": "Life happened",
+      "title": "A little busier.\nNo less us.",
+      "kicker": "03 / EVEN WHEN THE WORLD GOT LOUD",
+      "atmosphere": "night",
+      "whisper": "The problem was never our love. Life simply became complicated.",
+      "paragraphs": [
+        "Work asked for more. Studies filled the evenings. Family needed time, and some days there wasn’t much of us left to give.",
+        "Our conversations didn’t always stretch into the night anymore. Sometimes love was a short message between everything else. A thought saved for later. A quiet understanding.",
+        "You never have to measure your place in my life by how quickly a message arrives. We can make room for each other, gently, in the lives we’re still figuring out."
+      ],
+      "note": "Even in the quiet, you matter."
+    },
+    {
+      "id": "choosing-you",
+      "label": "Choosing you",
+      "title": "You can just be you.",
+      "kicker": "04 / MY SOFTEST PLACE TO LAND",
+      "atmosphere": "return",
+      "whisper": "Because with you, I don’t have to be someone I’m not.",
+      "paragraphs": [
+        "I love the version of you that feels strong enough for anything. I love the sensitive one, too. The tired one. The one who doesn’t have an answer yet.",
+        "You don’t have to arrive perfectly put together. There is room here for your unfinished thoughts, your silly side, your changing dreams. There is room for mine, too.",
+        "That is what I keep choosing. Not a perfect story. The ease of being ourselves, and the care we take with each other."
+      ],
+      "note": "Every version. Every ordinary day."
+    },
+    {
+      "id": "always",
+      "label": "Always",
+      "title": "Still you.\nAlways you.",
+      "kicker": "05 / THE PAGES WE HAVEN’T WRITTEN",
+      "atmosphere": "final",
+      "whisper": "If I could begin again, I’d still begin with you.",
+      "paragraphs": [
+        "From that first hello to all the little things I learned to love. Through full calendars and quieter evenings. Back to the simple, beautiful choice of us.",
+        "I don’t know every place life will take us. But I hope there are more ordinary mornings, more ridiculous conversations, more moments when we look at each other and just know.",
+        "Two years is a beautiful beginning. There is so much of our story still to come."
+      ],
+      "note": "Here’s to our next page."
+    }
+  ]
+}
