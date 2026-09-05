@@ -33,7 +33,7 @@ class LetterTests(SimpleTestCase):
         self.assertIn('static/js/experience.js', sources)
         self.assertIn('letters/models.py', sources)
 
-    @override_settings(DEBUG=False, SECURE_SSL_REDIRECT=True)
+    @override_settings(DEBUG=False, SECURE_SSL_REDIRECT=True, SECURE_HSTS_SECONDS=31536000)
     def test_production_redirects_to_https(self):
         self.assertEqual(self.client.get('/').status_code, 301)
         response = self.client.get('/', secure=True)

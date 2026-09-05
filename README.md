@@ -117,3 +117,15 @@ docker compose config --quiet
 ```
 
 Keep `main` as the verified baseline and work on `development`. Commit checkpoints before major features or migrations. Use `git revert <commit>` for shared-history rollback; avoid destructive resets. `.env`, `.venv`, database files, and collected assets are ignored. Repository-local automated commits use the transparent identity `Love Universe Workspace <workspace@localhost>`; replace it with your preferred identity for future work.
+
+### Verified in this workspace
+
+- Four Django tests pass; all standard migrations are applied; no missing model migrations.
+- Production `check --deploy` passes; static collection and live Gunicorn/WhiteNoise HTTP checks pass.
+- Docker development and production images build; Django checks pass inside the development container.
+- Firefox audit passes at widths 320, 390, 768, and 1440: no horizontal overflow, five chapters, start navigation, reveal completion, motion pause, and chapter tracking. Desktop, mobile, and night captures were visually reviewed.
+- JavaScript syntax and Git whitespace checks pass. Reduced-motion and no-JavaScript fallbacks were reviewed in source and server-rendering tests; automated browser emulation of those modes has not been run.
+
+Reproduce the dependency-free Firefox audit with Node 22 and Firefox installed. Start the Django server, create a temporary Firefox profile directory, then run Firefox with `--headless --no-remote --profile <absolute-profile-path> --remote-debugging-port 9222 about:blank`. In another terminal run `node scripts/firefox_audit.mjs`. Captures go to ignored `.artifacts/`. Use a fresh browser process after an interrupted audit. `scripts/browser_audit.py` offers an optional Playwright audit, including reduced-motion and JavaScript-disabled contexts; it requires an isolated Playwright installation and Chromium, and was not run during this build.
+
+Implementation references: [Django 5.2 compatibility](https://docs.djangoproject.com/en/5.2/releases/5.2/) and [WhiteNoise deployment](https://whitenoise.readthedocs.io/en/stable/django.html).

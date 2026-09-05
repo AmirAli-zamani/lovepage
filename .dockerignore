@@ -3,6 +3,8 @@
 .codex
 .venv
 .env
+.env.*
+!.env.example
 *.sqlite3
 **/__pycache__
 staticfiles
