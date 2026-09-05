@@ -129,3 +129,4 @@ Keep `main` as the verified baseline and work on `development`. Commit checkpoin
 Reproduce the dependency-free Firefox audit with Node 22 and Firefox installed. Start the Django server, create a temporary Firefox profile directory, then run Firefox with `--headless --no-remote --profile <absolute-profile-path> --remote-debugging-port 9222 about:blank`. In another terminal run `node scripts/firefox_audit.mjs`. Captures go to ignored `.artifacts/`. Use a fresh browser process after an interrupted audit. `scripts/browser_audit.py` offers an optional Playwright audit, including reduced-motion and JavaScript-disabled contexts; it requires an isolated Playwright installation and Chromium, and was not run during this build.
 
 Implementation references: [Django 5.2 compatibility](https://docs.djangoproject.com/en/5.2/releases/5.2/) and [WhiteNoise deployment](https://whitenoise.readthedocs.io/en/stable/django.html).
+# lovepage
