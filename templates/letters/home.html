@@ -1,13 +1,37 @@
-{% extends 'base.html' %}{% block content %}
-<div class="reading-progress" aria-hidden="true"></div>
-<header class="site-header"><a class="wordmark" href="#home">{{ letter.brand }}<span class="brand-star" aria-hidden="true">✧</span></a><nav aria-label="Our story"><a class="header-link" href="#beginning">Our story</a><span class="header-divider" aria-hidden="true"></span><span class="anniversary">TWO YEARS & COUNTING</span><button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause atmospheric motion" hidden><span aria-hidden="true">Ⅱ</span></button></nav></header>
-<main>
-<section class="hero" id="home" aria-labelledby="hero-title">
-<div class="hero-grain" aria-hidden="true"></div>
-<div class="hero-copy"><p class="eyebrow"><span></span>{{ letter.eyebrow }}</p><h1 id="hero-title">{{ letter.title }}<br><em>{{ letter.title_emphasis }}</em></h1><p class="intro">{{ letter.intro|linebreaksbr }}</p><a class="begin-button" href="#beginning">{{ letter.begin }}<span aria-hidden="true">↗</span></a><p class="invitation">{{ letter.invitation }}</p></div>
-<div class="universe" aria-hidden="true"><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><div class="orbit orbit-three"></div><div class="planet"><span class="planet-light"></span><span class="planet-ring"></span></div><span class="star star-one">✦</span><span class="star star-two">✧</span><span class="star star-three">✦</span><span class="star star-four">✧</span><span class="star star-five">·</span><span class="moon"></span><span class="orbit-dot"></span><span class="tiny-heart">♡</span><div class="universe-caption">you & me<span>and a universe of possibilities</span></div></div>
-<div class="hero-bottom"><span class="dedication">{{ letter.dedication }}</span><a href="#beginning" class="scroll-cue">SCROLL TO FEEL IT <span aria-hidden="true">↓</span></a><span class="edition">A LOVE LETTER IN FIVE CHAPTERS</span></div>
-</section>
-<div class="story" id="story"><aside class="chapter-rail" aria-label="Chapters"><nav>{% for chapter in letter.chapters %}<a href="#{{ chapter.id }}" aria-label="Chapter {{ forloop.counter }}: {{ chapter.label }}"><span class="rail-number">0{{ forloop.counter }}</span><span class="rail-label">{{ chapter.label }}</span></a>{% endfor %}</nav></aside>{% for chapter in letter.chapters %}{% include 'letters/chapter.html' %}{% endfor %}</div>
-<footer><a class="wordmark" href="#home">{{ letter.brand }}</a><p>{{ letter.dedication }}</p><a href="#home">Back to our beginning <span aria-hidden="true">↑</span></a></footer>
-</main>{% endblock %}
+{% extends 'base.html' %}
+{% block content %}
+<div class="night-room" aria-hidden="true"><div class="candlelight"></div><div class="rose-light"></div><div class="dust"></div></div>
+<header class="room-header">
+  <span class="room-mark"><span aria-hidden="true">✧</span> {{ letter.ui.quiet }}</span>
+  <button class="motion-toggle" type="button" aria-pressed="false" data-pause="{{ letter.ui.pause }}" data-resume="{{ letter.ui.resume }}" aria-label="{{ letter.ui.pause }}" hidden><span aria-hidden="true">Ⅱ</span></button>
+</header>
+<main id="letter-experience">
+  <section class="opening" id="home" aria-labelledby="opening-title">
+    <p class="eyebrow">{{ letter.eyebrow }}</p>
+    <h1 id="opening-title">{{ letter.title }} <span>{{ letter.title_emphasis }}</span></h1>
+    <p class="opening-intro">{{ letter.intro|linebreaksbr }}</p>
+    <a class="envelope" href="#beginning" aria-label="{{ letter.begin }}">
+      <span class="envelope-back" aria-hidden="true"></span>
+      <span class="envelope-insert" aria-hidden="true">{{ letter.salutation }}</span>
+      <span class="envelope-front" aria-hidden="true"></span>
+      <span class="envelope-flap" aria-hidden="true"></span>
+      <span class="envelope-address" aria-hidden="true"><span>{{ letter.envelope_to }}</span><small>{{ letter.envelope_note }}</small></span>
+      <span class="wax-seal" aria-hidden="true"><span>تـو</span></span>
+      <span class="envelope-stamp" aria-hidden="true">{{ letter.envelope_mark }}<span>∞</span></span>
+    </a>
+    <a class="open-link" href="#beginning">{{ letter.begin }} <span aria-hidden="true">←</span></a>
+    <p class="invitation">{{ letter.invitation }}</p>
+    <p class="opening-footer">{{ letter.ui.footer }}</p>
+  </section>
+  <div class="letter-desk" id="story">
+    <div class="desk-tools" hidden><a href="#home" class="close-letter"><span aria-hidden="true">↗</span> {{ letter.ui.close }}</a><span>{{ letter.dedication }}</span></div>
+    <div class="paper-stack">
+      {% for chapter in letter.chapters %}{% include 'letters/chapter.html' %}{% endfor %}
+    </div>
+    <nav class="page-index" aria-label="{{ letter.ui.pages }}" hidden>
+      {% for chapter in letter.chapters %}<a href="#{{ chapter.id }}" aria-label="{{ chapter.kicker }}: {{ chapter.label }}"><span>{{ chapter.number }}</span></a>{% endfor %}
+    </nav>
+    <p class="reading-status sr-only" aria-live="polite" aria-atomic="true"></p>
+  </div>
+</main>
+{% endblock %}

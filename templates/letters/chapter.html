@@ -1,1 +1,21 @@
-<section class="chapter atmosphere-{{ chapter.atmosphere }}" id="{{ chapter.id }}" aria-labelledby="title-{{ chapter.id }}"><div class="chapter-glow" aria-hidden="true"></div><div class="chapter-inner"><p class="eyebrow reveal">{{ chapter.kicker }}</p><h2 class="reveal" id="title-{{ chapter.id }}">{{ chapter.title|linebreaksbr }}</h2><div class="chapter-rule reveal" aria-hidden="true">✧</div><div class="prose">{% for paragraph in chapter.paragraphs %}<p class="reveal">{{ paragraph }}</p>{% endfor %}</div><blockquote class="reveal">{{ chapter.whisper }}</blockquote><p class="handwritten reveal">{{ chapter.note }}</p>{% if forloop.last %}<div class="ending reveal"><span class="infinity" aria-label="Infinity">∞</span><p>{{ letter.closing }}</p><p class="handwritten">{{ letter.signature }}</p></div>{% endif %}</div><span class="chapter-page" aria-hidden="true">0{{ forloop.counter }} / 05</span></section>
+<article class="letter-page atmosphere-{{ chapter.atmosphere }}" id="{{ chapter.id }}" aria-labelledby="title-{{ chapter.id }}">
+  <header class="page-heading">
+    <p class="page-kicker reveal">{{ chapter.kicker }}</p>
+    <span class="page-flower" aria-hidden="true">❦</span>
+    {% if forloop.first %}<p class="salutation reveal">{{ letter.salutation }}</p>{% endif %}
+    <h2 class="reveal" id="title-{{ chapter.id }}" tabindex="-1">{{ chapter.title }}</h2>
+  </header>
+  <div class="prose">{% for paragraph in chapter.paragraphs %}<p class="reveal">{{ paragraph }}</p>{% endfor %}</div>
+  <blockquote class="reveal">{{ chapter.whisper }}</blockquote>
+  <p class="handwritten reveal">{{ chapter.note }}</p>
+  {% if forloop.last %}
+  <div class="ending reveal"><span class="infinity" aria-label="{{ letter.ui.infinity }}">∞</span><p>{{ letter.closing }}</p><p class="signature">{{ letter.signature }}</p><p class="postscript">{{ letter.postscript }}</p></div>
+  {% endif %}
+  <footer class="page-footer">
+    <span class="page-number">{{ letter.ui.page }} {{ chapter.number }} {{ letter.ui.of }} ۵</span>
+    <nav class="page-actions" aria-label="{{ chapter.kicker }}" hidden>
+      <a class="previous-page" href="#home">{{ letter.ui.previous }}</a>
+      {% if forloop.last %}<a class="next-page" href="#home">{{ letter.ui.close }} <span aria-hidden="true">↶</span></a>{% else %}<a class="next-page" href="#{{ chapter.id }}">{{ letter.ui.next }} <span aria-hidden="true">←</span></a>{% endif %}
+    </nav>
+  </footer>
+</article>

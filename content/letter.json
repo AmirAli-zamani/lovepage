@@ -1,84 +1,109 @@
 {
-  "brand": "Always, you.",
-  "eyebrow": "A LITTLE UNIVERSE, JUST FOR US",
-  "title": "In every lifetime,",
-  "title_emphasis": "I’d find you.",
-  "intro": "Two years. A thousand little moments.\nAnd one person I’d choose all over again.",
-  "invitation": "This is our story. Take your time.",
-  "begin": "Step into our story",
-  "dedication": "For you. For us. For everything still to come.",
-  "signature": "All my love, always.",
-  "closing": "Not the end. Just another beautiful page.",
+  "brand": "برای تو، همیشه",
+  "eyebrow": "دو سال کنار هم، و هنوز…",
+  "title": "بعضی حرف‌ها را",
+  "title_emphasis": "باید برات نوشت.",
+  "intro": "بین این همه کار و روزهای شلوغ،\nدلم خواست چند دقیقه فقط برای تو باشد.",
+  "invitation": "هر وقت دلت خواست، بازش کن. عجله‌ای نیست.",
+  "begin": "باز کردن نامه",
+  "dedication": "برای تو؛ که کنارت، خودِ خودمم.",
+  "signature": "با همهٔ خودم، برای تو.",
+  "closing": "این نامه تمام می‌شود؛ ما ادامه داریم.",
+  "envelope_to": "به تو،",
+  "envelope_note": "از طرف کسی که هنوز، تو را انتخاب می‌کند.",
+  "envelope_mark": "فقط برای تو",
+  "salutation": "عزیزِ من،",
+  "postscript": "پ.ن. لازم نیست همین حالا چیزی بگی. فقط می‌خواستم بدونی.",
+  "ui": {
+    "skip": "خواندن نامه",
+    "pages": "صفحه‌های نامه",
+    "previous": "صفحهٔ قبل",
+    "next": "ورق بزن",
+    "close": "تا کردن نامه",
+    "again": "از اول بخوان",
+    "pause": "توقف حرکت‌ها",
+    "resume": "ادامهٔ حرکت‌ها",
+    "page": "صفحه",
+    "of": "از",
+    "infinity": "تا همیشه",
+    "quiet": "این چند دقیقه، فقط ما",
+    "footer": "نوشته‌شده با حوصله، برای یک نفر"
+  },
   "chapters": [
     {
       "id": "beginning",
-      "label": "The beginning",
-      "title": "It started with a little hello.",
-      "kicker": "01 / WHEN OUR WORLDS MET",
+      "label": "آن سلام اول",
+      "number": "۱",
+      "title": "از همان سلام‌های ساده",
+      "kicker": "صفحهٔ اول · شروع ما",
       "atmosphere": "dawn",
-      "whisper": "Funny how a screen could feel so much like home.",
+      "whisper": "کم‌کم، حرف زدن با تو شد بخشی از روزم که دلم می‌خواست طول بکشد.",
       "paragraphs": [
-        "Before you were part of my everyday, you were a name lighting up my screen. A message I hoped would come. A conversation I didn’t want to end.",
-        "Then came the late-night calls. The tiny pauses while a video caught up. The “are you still there?” when neither of us really wanted to say goodnight.",
-        "Somewhere between one more message and five more minutes, a stranger became my favourite part of the day."
+        "دو سال گذشته. خواستم این را بنویسم، چون لابه‌لای حرف‌های هر روز، بعضی چیزها ناگفته می‌ماند. مثل اینکه هنوز از دیدن پیامت خوشحال می‌شوم.",
+        "اوایل، همه‌چیز از پشت صفحه بود. پیام‌ها، تماس‌های تصویری، حرف‌هایی که تا آخر شب ادامه پیدا می‌کرد. کنار هم نبودیم، ولی داشتیم آرام‌آرام وارد روزهای هم می‌شدیم.",
+        "آن موقع هنوز خیلی چیزها را دربارهٔ هم نمی‌دانستیم. فقط می‌دانستم دلم می‌خواهد باز هم با تو حرف بزنم. همین حس ساده، شد شروع ما."
       ],
-      "note": "One hello. A whole new world."
+      "note": "هنوز هم دلم می‌خواهد برات تعریف کنم."
     },
     {
       "id": "knowing-you",
-      "label": "Knowing you",
-      "title": "And then, all the little things.",
-      "kicker": "02 / THE BEAUTY OF BEING YOU",
+      "label": "ریزِ دوست‌داشتنت",
+      "number": "۲",
+      "title": "تو، در چیزهای کوچک",
+      "kicker": "صفحهٔ دوم · نزدیک‌تر",
       "atmosphere": "rose",
-      "whisper": "I fell for the things you weren’t trying to show me.",
+      "whisper": "دوست داشتنت، برای من، توی همین ریزه‌کاری‌ها جا گرفته.",
       "paragraphs": [
-        "The way your expression changes before you say what you’re thinking. Your very particular kind of funny. How an ordinary story becomes better when you’re the one telling it.",
-        "I began to know the small things: when to laugh with you, when to listen, when a little quiet was all you needed. And I’m still learning.",
-        "Two years later, there are still moments when you do something so completely you, and I catch myself smiling."
+        "نمی‌خواهم این صفحه را با تعریف‌های بزرگ پر کنم. چیزی که به من نزدیکت کرد، خودت بودی؛ همان‌طور که بی‌هوا وسط حرف زدن پیدایت می‌شود.",
+        "مکثت قبل از جواب دادن. حالتی که موقع شوخی توی صورتت می‌آید. فرقِ صدایت وقتی خسته‌ای با وقتی که چیزی برای تعریف کردن داری. چیزهایی که توی یک عکس نمی‌شود دید.",
+        "هنوز همیشه درست نمی‌فهممت. گاهی باید بپرسم، گاهی باید بیشتر گوش بدهم. ولی دلم می‌خواهد تو را از خودت بشنوم، نه از حدس‌هایی که درباره‌ات می‌زنم."
       ],
-      "note": "My favourite details are yours."
+      "note": "هنوز دارم می‌شناسمت. با حوصله."
     },
     {
       "id": "life-happened",
-      "label": "Life happened",
-      "title": "A little busier.\nNo less us.",
-      "kicker": "03 / EVEN WHEN THE WORLD GOT LOUD",
+      "label": "روزهای پُر",
+      "number": "۳",
+      "title": "سرمان شلوغ شد، نه دلمان",
+      "kicker": "صفحهٔ سوم · میان روزمرگی",
       "atmosphere": "night",
-      "whisper": "The problem was never our love. Life simply became complicated.",
+      "whisper": "کمتر فرصت داشتیم؛ نه اینکه کمتر دوستت داشته باشم.",
       "paragraphs": [
-        "Work asked for more. Studies filled the evenings. Family needed time, and some days there wasn’t much of us left to give.",
-        "Our conversations didn’t always stretch into the night anymore. Sometimes love was a short message between everything else. A thought saved for later. A quiet understanding.",
-        "You never have to measure your place in my life by how quickly a message arrives. We can make room for each other, gently, in the lives we’re still figuring out."
+        "بعد، روزها پُرتر شدند. کار، درس، مسائل خانواده. گاهی آن‌قدر چیز توی سرمان بود که حتی تعریف کردنِ روزمان را می‌گذاشتیم برای بعد.",
+        "می‌دانم بعضی روزها جواب دادن به یک پیام هم وقت و توان می‌خواهد. قرار نیست دیر جواب دادن، جای تو را برای من کوچک کند. لازم نیست برای خسته بودنت توضیح پس بدهی.",
+        "در عین حال دلم می‌خواهد برای هم وقت پیدا کنیم؛ حتی کوتاه. به هم بگوییم چه چیزی لازم داریم، بدون دلخوری از اینکه چرا دیگری خودش نفهمیده. می‌شود شلوغ بود و باز مراقبِ هم ماند."
       ],
-      "note": "Even in the quiet, you matter."
+      "note": "هر وقت فرصت شد، از روزت برام بگو."
     },
     {
       "id": "choosing-you",
-      "label": "Choosing you",
-      "title": "You can just be you.",
-      "kicker": "04 / MY SOFTEST PLACE TO LAND",
+      "label": "جای امنِ ما",
+      "number": "۴",
+      "title": "اینجا، خودت باش",
+      "kicker": "صفحهٔ چهارم · بی‌نیاز از نقش بازی کردن",
       "atmosphere": "return",
-      "whisper": "Because with you, I don’t have to be someone I’m not.",
+      "whisper": "چون کنار تو، مجبور نیستم کسی باشم که نیستم.",
       "paragraphs": [
-        "I love the version of you that feels strong enough for anything. I love the sensitive one, too. The tired one. The one who doesn’t have an answer yet.",
-        "You don’t have to arrive perfectly put together. There is room here for your unfinished thoughts, your silly side, your changing dreams. There is room for mine, too.",
-        "That is what I keep choosing. Not a perfect story. The ease of being ourselves, and the care we take with each other."
+        "دلم می‌خواهد کنار من فقط وقتی حالت خوب است راحت نباشی. وقتی حساسی، وقتی از چیزی رنجیده‌ای، وقتی هنوز نمی‌دانی چه می‌خواهی بگویی هم جا داشته باشی.",
+        "من هم همیشه آرام و مرتب نیستم. بعضی وقت‌ها حرفم را خوب نمی‌زنم، بعضی وقت‌ها دیر می‌فهمم. دوست دارم بتوانیم بگوییم «این ناراحتم کرد» و هنوز مطمئن باشیم که قرار است همدیگر را بشنویم.",
+        "یکی از عزیزترین چیزهایی که با تو دارم همین است: لازم نیست تمام روز نقشِ آدمی را بازی کنم که همه‌چیز را بلد است. می‌توانم خودم باشم. می‌خواهم تو هم همین‌قدر راحت باشی."
       ],
-      "note": "Every version. Every ordinary day."
+      "note": "برای دوست‌داشتنی بودن، لازم نیست بی‌نقص باشی."
     },
     {
       "id": "always",
-      "label": "Always",
-      "title": "Still you.\nAlways you.",
-      "kicker": "05 / THE PAGES WE HAVEN’T WRITTEN",
+      "label": "ادامهٔ ما",
+      "number": "۵",
+      "title": "و باز، انتخابم تویی",
+      "kicker": "صفحهٔ پنجم · هنوز ادامه دارد",
       "atmosphere": "final",
-      "whisper": "If I could begin again, I’d still begin with you.",
+      "whisper": "تو را می‌بینم. می‌خواهم بفهممت. و باز، تو را انتخاب می‌کنم.",
       "paragraphs": [
-        "From that first hello to all the little things I learned to love. Through full calendars and quieter evenings. Back to the simple, beautiful choice of us.",
-        "I don’t know every place life will take us. But I hope there are more ordinary mornings, more ridiculous conversations, more moments when we look at each other and just know.",
-        "Two years is a beautiful beginning. There is so much of our story still to come."
+        "از آن پیام‌های اول تا شناختنِ ریزه‌کاری‌های هم، از شب‌های پرحرف تا روزهایی که فرصت کم آوردیم؛ این دو سال برای من عزیز است. با همهٔ شکل‌هایی که داشته.",
+        "نمی‌خواهم قول بدهم که همیشه همه‌چیز آسان باشد. می‌خواهم سهم خودم را جدی بگیرم: بیشتر گوش بدهم، روشن‌تر حرف بزنم و دوست داشتنت را برای یک روز خلوت‌تر عقب نیندازم.",
+        "این را ننوشتم که چیزی را تمام کنم. نوشتم که وسط همین زندگیِ شلوغ یادت بماند: من هنوز دلم می‌خواهد روزهایم را با تو قسمت کنم."
       ],
-      "note": "Here’s to our next page."
+      "note": "برای روزهای معمولیِ بعدی‌مان."
     }
   ]
 }
